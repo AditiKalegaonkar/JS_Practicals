@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Comparison</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>String Comparison in JavaScript</h1>
+        <div class="input-area">
+            <input type="text" id="stringInput1" placeholder="Enter the first string...">
+            <input type="text" id="stringInput2" placeholder="Enter the second string...">
+            <button id="compareBtn" onclick="compareStrings()">Compare</button>
+        </div>
+        <div id="results-area" class="hidden">
+            <p id="comparisonIntro"></p>
+            <h4>1. Strict Equality Operator</h4>
+            <p id="equalityResult"></p>
+            <h4>2. Length Property</h4>
+            <p id="lengthResult"></p>
+            <h4>3.Using LocalCompare()</h4>
+            <p id="localeResult"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

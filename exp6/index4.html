@@ -1,0 +1,80 @@
+<!---
+Write a JavaScript program that will create an array and perform following operations
+• To remove specific element from the array.
+• Check if an array contains a specified value.
+• To empty an array
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style_4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="josefin-sans-body">
+    <h1>Array Operations</h1>
+    <div class="Size">
+        <label>Enter Array Size: </label>
+        <input type="text" id="size" class="ipcontainer" />
+        <br />
+        <br />
+    </div>
+    <div class="operations">
+        <div class="box">
+            <label>Enter element: </label>
+            <input type="text" id="ele" class="ipcontainer" />
+            <br />
+            <br />
+            <button onclick="show()">Add Element</button>
+            <p id="result1"></p>
+            <br />
+            <br />
+        </div>
+
+        <div class="box">
+            <label>Enter element to be removed: </label>
+            <input type="text" id="ele1" class="ipcontainer" />
+            <button onclick="remove()">Submit</button>
+            <br />
+            <h3>Remove elements by creating another array</h3>
+            <p id="result2"></p>
+            <br />
+            <h3>Remove elements by splice</h3>
+            <p id="result3"></p>
+        </div>
+
+        <div class="box">
+            <label>Enter element to be searched: </label>
+            <input type="text" id="ele2" class="ipcontainer" />
+            <button onclick="search()">Submit</button>
+            <br />
+            <h3>Linear Search</h3>
+            <p id="result4"></p>
+            <br />
+            <h3>Search element using find</h3>
+            <p id="result5"></p>
+        </div>
+
+        <div class="box">
+            <h3>Delete array</h3>
+            <button onclick="Delete()">Submit</button>
+            <h3>Deletion m1</h3>
+            <p id="result6"></p>
+            <br />
+            <h3>Deletion m2</h3>
+            <p id="result7"></p>
+            <br />
+        </div>
+    </div>
+    <script src="2_9_25.js"></script>
+</body>
+
+</html>

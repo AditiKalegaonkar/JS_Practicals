@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation</title>
+    <link rel="stylesheet" href="index3.css">
+</head>
+
+<body>
+    <h3>String Manipulation</h3>
+    <div class="input">
+        <label>Enter String: </label>
+        <input type="text" id="str" class="ipcontainer" />
+    </div>
+
+    <div class="main-container">
+        <div class="grid-container">
+            <button onclick="reverseString()">Reverse String</button>
+            <p id="reverseResult"></p>
+            <button onclick="checkPalindrome()">Check Palindrome</button>
+            <p id="palindromeResult"></p>
+        </div>
+
+        <div class="replace-container">
+            <div class="replace-inputs">
+                <input type="text" id="findText" placeholder="Text to find...">
+                <input type="text" id="replaceText" placeholder="Replace with...">
+            </div>
+            <button onclick="replaceString()">Replace String</button>
+            <p id="replaceResult"></p>
+        </div>
+
+        <button onclick="Reset()" class="reset-button">Reset</button>
+    </div>
+
+    <script src="29_7_25.js"></script>
+</body>
+
+</html>

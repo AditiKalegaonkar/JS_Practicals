@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #e0f7f4;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, auto);
+            direction: ltr;
+            align-items: center;
+            justify-items: center;
+            gap: 20px;
+            margin: 0;
+            padding: 40px 60px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            grid-column: 1 / 3;
+            align-self: start;
+            justify-self: center;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        div {
+            background-color: #b2dfdb;
+            padding: 20px;
+            min-height: 220px;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #009688;
+            color: white;
+            width: 110px;
+            height: 36px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #00796b;
+            transform: scale(1.03);
+        }
+
+        #R1, #R2, #R3, #R4 {
+            color: black;
+            background-color: #f5fafa;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .ipcontainer {
+            border-radius: 10px;
+            height: 30px;
+            width: 120px;
+            max-width: 100%;
+            border: 1px solid #ccc;
+            padding: 5px;
+            background-color: #ffffff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            box-sizing: border-box;
+        }
+    </style>
+    <title>Area Calculator</title>
+</head>
+<body>
+    <h1>Area Calculator</h1>
+    <div>
+        <h3>1. For the area of Square: </h3>
+        <label>Enter Side: </label>
+        <input type="text" id="side" class="ipcontainer"/>
+        <br />
+        <br />
+        <button onclick="areaSq()">Submit</button>
+        <button onclick="Reset()" id="R1">Reset</button>
+        <p id="result"></p>
+    </div>
+
+    <div>
+        <h3>2. For the area of Circle: </h3>
+        <label>Enter Radius: </label>
+        <input type="text" id="rad" class="ipcontainer" />
+        <br />
+        <br />
+        <button onclick="areaC()">Submit</button>
+        <button onclick="Reset()" id="R2">Reset</button>
+        <p id="result1"></p>
+    </div>
+
+    <div>
+        <h3>3. For the area of Rectangle: </h3>
+        <label>Enter Value 1: </label>
+        <input type="text" id="len" class="ipcontainer"/>
+        <br />
+        <br />
+        <label>Enter Value 2: </label>
+        <input type="text" id="bre" class="ipcontainer"/>
+        <br />
+        <br />
+        <button onclick="areaRect()">Submit</button>
+        <button onclick="Reset()" id="R3">Reset</button>
+        <p id="result2"></p>
+    </div>
+
+    <div>
+        <h3>4. For the area of Triangle: </h3>
+        <label>Enter Side 1: </label>
+        <input type="text" id="s1" class="ipcontainer"/>
+        <br />
+        <br />
+        <label>Enter Side 2: </label>
+        <input type="text" id="s2" class="ipcontainer"/>
+        <br />
+        <br />
+        <label>Enter Side 3: </label>
+        <input type="text" id="s3" class="ipcontainer"/>
+        <br />
+        <br />
+        <button onclick="areaTri()">Submit</button>
+        <button onclick="Reset()" id="R4">Reset</button>
+        <p id="result3"></p>
+    </div>
+    <script src="15_7_25.js"></script>
+</body>
+</html>

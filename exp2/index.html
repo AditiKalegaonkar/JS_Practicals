@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+</head>
+
+<body class="m-plus-rounded-1c-regular">
+    <h1>Table Generator</h1>
+    <div class="outer">
+        <div class="inner">
+            <h3>Table using For Loop</h3>
+            <label>Enter Number: </label>
+            <input type="text" id="num1" class="ipcontainer"/>
+            <br />
+            <br />
+            <button onclick="ForLoop()">Submit</button>
+            <button onclick="Reset()" id="R1">Reset</button>
+            <p id="result1"></p>
+        </div>
+
+
+        <div class="inner">
+            <h3>Table using while Loop</h3>
+            <label>Enter Number: </label>
+            <input type="text" id="num2" class="ipcontainer"/>
+            <br />
+            <br />
+            <button onclick="whileLoop()">Submit</button>
+            <button onclick="Reset()" id="R2">Reset</button>
+            <p id="result2"></p>
+        </div>    
+
+        <div class="inner">
+            <h3>Table using do-while Loop</h3>
+            <label>Enter Number: </label>
+            <input type="text" id="num3" class="ipcontainer"/>
+            <br />
+            <br />
+            <button onclick="doWhile()">Submit</button>
+            <button onclick="Reset()" id="R3">Reset</button>
+            <p id="result3"></p>
+        </div>
+    </div>
+    <script src="22_7_25.js"></script>
+</body>
+</html>
