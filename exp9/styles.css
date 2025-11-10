@@ -1,0 +1,90 @@
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #AFEEEE;
+}
+
+body > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+div > fieldset{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 16px;
+  border-color:#000;
+}
+
+h2{
+  text-align: center;
+  font-size: 40px;
+}
+
+body > div > div {
+  font-size: 15px;
+  width: 600px;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 8px;
+  background-color: #E0FFFF;
+}
+
+input, select{
+  font-family: Quicksand;
+  background-color: white;
+  height: 30px;
+  border: none;
+  width: 200px;
+  border-radius: 8px;
+  padding: 2px;
+  margin: 2px 2px;
+}
+
+.radio{
+  height: 20px;
+  width: 20px;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  font-family: Quicksand;
+  font-weight: 600;
+  font-size: 15px;
+  height: 40px;
+  width: 150px;
+  background-color:#E0FFFF;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+button:hover{
+  background-color: #A8E4A0;
+}
+
+p[id$="_error"] {
+  display: none;
+  color: red;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 5px;
+}
